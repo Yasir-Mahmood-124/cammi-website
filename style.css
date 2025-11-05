@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background: url('background.svg') no-repeat center center fixed;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+  overflow: hidden;
+}
+
+/* Centered layout */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* Logo styling */
+.logo {
+  width: 120px;
+  height: auto;
+  margin-bottom: 30px;
+}
+
+/* Gradient text setup */
+#coming-soon {
+  font-size: 2.5rem;
+  letter-spacing: 6px;
+  line-height: 1.2;
+  background: linear-gradient(90deg, #ff5f9e, #5f7aff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* Blinking cursor */
+.cursor {
+  display: inline-block;
+  width: 3px;
+  height: 1em;
+  background-color: #5f7aff;
+  margin-left: 6px;
+  position: relative;
+  top: 0.1em;
+  animation: blink 0.8s infinite;
+  vertical-align: middle;
+}
+
+/* Cursor blink animation */
+@keyframes blink {
+  0%, 50% { opacity: 1; }
+  51%, 100% { opacity: 0; }
+}
+
+/* =============================== */
+/*       POLICY PAGE STYLES        */
+/* =============================== */
+
+.policy {
+  max-width: 800px;
+  background: rgba(255, 255, 255, 0.85);
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.05);
+  text-align: left;
+  backdrop-filter: blur(10px);
+  overflow-y: auto;
+  max-height: 90vh;
+}
+
+.policy h1 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 20px;
+  background: linear-gradient(90deg, #ff5f9e, #5f7aff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.policy-content h2 {
+  font-size: 1.2rem;
+  margin-top: 20px;
+  color: #333;
+}
+
+.policy-content p {
+  color: #444;
+  line-height: 1.6;
+  margin-top: 8px;
+}
+
+a {
+  color: #5f7aff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.back-link {
+  display: inline-block;
+  margin-top: 30px;
+  color: #5f7aff;
+  font-weight: 500;
+  text-decoration: none;
+  text-align: center;
+  width: 100%;
+}
+
+/* Allow policy pages to scroll normally */
+.policy-page {
+  height: auto !important;
+  overflow: auto !important;
+  align-items: flex-start;
+  padding-top: 60px;
+}
